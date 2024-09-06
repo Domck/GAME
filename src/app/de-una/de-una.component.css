@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Centra verticalmente */
+  text-align: center; /* Centra el texto */
+  min-width: 300px;
+}
+
+.image-container {
+  margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.dynamic-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button-container {
+  margin-top: 10px; /* Espacio entre el texto y los botones */
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 20px; /* Espacio entre los botones */
+  width: 100%; /* Para hacer que los botones ocupen el ancho total */
+  max-width: 400px; /* Ancho máximo para los botones */
+}
+
+.button-custom {
+  flex: 1; /* Hace que ambos botones tengan el mismo tamaño y ocupen todo el ancho disponible */
+  padding: 15px; /* Hace que los botones sean más altos */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mi-boton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mi-boton:hover {
+  background-color: #3b3b3b; /* Cambia el color de fondo al pasar el mouse */
+}

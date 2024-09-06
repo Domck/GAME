@@ -1,0 +1,30 @@
+<!-- <div class="container">
+  <div class="image-container">
+    <img src="https://i.pinimg.com/236x/8c/09/bc/8c09bcf42f202113fdf8f2b3332601e0.jpg" alt="Imagen Dinámica" class="dynamic-image">
+  </div>
+  <div class="button-container">
+    <h1>¿Quieres ser mi novia?</h1>
+    <button type="button" class="btn btn-secondary btn-lg" id="button1">SÍ</button>
+    <button class="mi-boton btn btn-lg"
+        (mouseenter)="cambiarTexto('SÍ')"
+        (mouseleave)="cambiarTexto('NO')">
+    {{ textoBoton }}
+    </button>
+  </div>
+</div> -->
+<div class="container">
+  <div class="image-container">
+    <img src="https://i.pinimg.com/236x/8c/09/bc/8c09bcf42f202113fdf8f2b3332601e0.jpg" alt="Imagen Dinámica" class="dynamic-image">
+  </div>
+  <div class="button-container">
+    <h1>¿Quieres ser mi novia?</h1>
+    <div class="buttons-row">
+      <button type="button" (click)="irADeAcuerdo()"  class="btn btn-secondary btn-lg button-custom">SÍ</button>
+      <button class="mi-boton btn btn-lg button-custom"
+          (mouseenter)="cambiarTexto('SÍ')"
+          (mouseleave)="cambiarTexto('NO')">
+      {{ textoBoton }}
+      </button>
+    </div>
+  </div>
+</div>
